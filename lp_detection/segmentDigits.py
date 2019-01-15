@@ -1,3 +1,7 @@
+#reads localized and equalized license plate images, then finds contours and segments digits on the plate
+#saves two copies, a 32x32 random gray-value padded grayscale digit image (for evaluating inference using SVHN)
+#and a 28x28 zero-padded binarized digit image for inference using MNIST
+
 import cv2
 import os
 import csv
